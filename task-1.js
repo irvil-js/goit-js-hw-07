@@ -1,5 +1,5 @@
 const categoryEl = document.querySelectorAll('.item');
-// console.log(`В списке ${categoryEl.length} категории.`);
+console.log(`В списке ${categoryEl.length} категории.`);
 
 // 2й вариант решения
 // Array.prototype.forEach.call(categoryEl, (element) => {
@@ -11,5 +11,5 @@ const categoryEl = document.querySelectorAll('.item');
 for (let elem of categoryEl) {
     let category = elem.firstElementChild.textContent;   
     let quantityElem = elem.lastElementChild.children.length;
-    // console.log(`Категория: ${category} \ Количество элементов: ${quantityElem}`);
+    console.log(`Категория: ${category} \ Количество элементов: ${quantityElem}`);
 };
