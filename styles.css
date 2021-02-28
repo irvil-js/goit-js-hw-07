@@ -1,0 +1,15 @@
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.gallery-item {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#gallery li:not(:last-child) {
+  margin-right: 20px;
+}
