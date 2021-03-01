@@ -1,2 +1,1 @@
-# goit-js-hw-07
-html+css, слушатель обытий
+<a href="./tasks.html">CLICK HERE (Тыц-Тыц)</a>
