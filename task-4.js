@@ -16,23 +16,22 @@ let counterValue = 0;
 
 const incrementBtn = document.querySelector('button[data-action="increment"]');
 const decrementBtn = document.querySelector('button[data-action="decrement"]');
-const commonValue = document.querySelector('#value');
 
 
 incrementBtn.addEventListener('click', onIncrementBtn);
 decrementBtn.addEventListener('click', onDecrementBtn);
 
-function onRenewal() {
-    commonValue.textContent = counterValue;
+function updateDocument() {
+    document.querySelector('#value').textContent = counterValue;
 }
 
 function onIncrementBtn() {
     counterValue += 1;
-    onRenewal();
+    updateDocument();
 };
 
 
 function onDecrementBtn() {
     counterValue -= 1;
-    onRenewal();
+    updateDocument();
 };
